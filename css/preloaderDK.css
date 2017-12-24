@@ -1,0 +1,68 @@
+#preloaderDK {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: #fff;
+    z-index: 1002;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+#preloaderDK.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+.preloaderDK__inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    padding: 0 15px;
+}
+.preloaderDK__textblock {
+    display: none !important;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.preloaderDK__textblock.is-active {
+    display: block !important;
+}
+.preloaderDK__textblock__logo {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.preloaderDK__textblock__logo img {
+    width: 100%;
+}
+.preloaderDK__textblock__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Arial;
+    font-size: 20px;
+    color: #333;
+    margin-left: 10px;
+}
+.preloaderDK__progress {
+    display: none;
+    position: relative;
+    height: 4px;
+    background-color: #eee;
+}
+.preloaderDK__progress.is-active {
+    display: block !important;
+}
+.preloaderDK__progress__line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: #aaa;
+    width: 0%;
+    transition: .3s ease;
+}

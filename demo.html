@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>preloaderDK - Demo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        .main {
+            width: 900px;
+            margin: 0 auto;
+            padding: 100px 0;
+        }
+        h2 {
+            text-align: center;
+            font-family: Arial;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/preloaderDK.css">
+</head>
+<body>
+
+    <!-- preloaderDK - BEGIN -->
+    <div id="preloaderDK" class="is-active">
+        <div class="preloaderDK__inner">
+            <div class="preloaderDK__textblock">
+                <div class="preloaderDK__textblock__logo">
+                    <img src='./img/logo.jpg' alt='logotype' />
+                </div>
+                <div class="preloaderDK__textblock__text">
+                    <span>Your text</span>
+                </div>
+            </div>
+            <div class="preloaderDK__progress">
+                <div class="preloaderDK__progress__line"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/preloaderDK.js"></script>
+    <script>
+        window.onload = function() {
+            preloaderDK({
+                el: '#preloaderDK', // Элемент preloaderDK
+                showTextBlock: true, // Отображение текта и логотипа
+                showProgressBar: true // Отображение прогресса загрузки
+            })
+        }
+    </script>
+    <!-- preloaderDK - END -->
+
+    <div class="main">
+        <h2>preloaderDK</h2>
+    </div>
+</body>
+</html>
